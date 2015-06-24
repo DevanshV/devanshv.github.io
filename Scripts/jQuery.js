@@ -1,0 +1,12 @@
+/*
+$(document).ready(function(){
+    $('span').hover(
+        function(){
+            $(this).fadeTo('slow',0.1);
+        },
+        function(){
+            $(this).fadeTo('slow',1);
+        }     
+    ); 
+});
+*/

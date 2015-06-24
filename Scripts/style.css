@@ -1,0 +1,59 @@
+
+
+body, html {
+    height:100%;
+    background-color:#8F7451;
+    max-width:100%;
+    overflow-x: hidden;
+}
+
+.Links { 
+    position:absolute;
+    padding-bottom:1em;
+    padding-right:2em;
+    bottom:0;
+    right:0;
+}
+
+.intro {   
+    margin:0px;
+    width:100vw;
+    height:100vh;
+    background-image:url("../Comic.jpg");
+    background-size:auto;
+    background-attachment: fixed;
+    -webkit-background-size:cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position: relative;
+    top:0;
+}
+
+#LOGO {
+    position:relative;
+    padding:0;
+    width:100vw;
+    height:100vh;
+    background-image:url("../Devansh.png");
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-position: center center;
+    background-size:75% 75%;     
+}
+
+img {
+  position:absolute;
+  width:10%;
+  height:10%;
+  left:50vw;
+  right:50vw;
+  bottom:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.intro img.top:hover {
+  opacity:0;
+}
