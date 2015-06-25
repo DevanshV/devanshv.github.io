@@ -19,7 +19,7 @@ body, html {
     margin:0px;
     width:100vw;
     height:100vh;
-    background-image:url("../Comic.jpg");
+    background-image:url("../Images/Comic.jpg");
     background-size:auto;
     background-attachment: fixed;
     -webkit-background-size:cover;
@@ -34,7 +34,7 @@ body, html {
     padding:0;
     width:100vw;
     height:100vh;
-    background-image:url("../Devansh.png");
+    background-image:url("../Images/Devansh.png");
     background-repeat: no-repeat;
     background-attachment:scroll;
     background-position: center center;
