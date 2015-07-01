@@ -1,59 +1,80 @@
-
-
-body, html {
-    height:100%;
-    background-color:#8F7451;
-    max-width:100%;
+body,
+html {
+    height: 100%;
+    background-color: #8F7451;
+    max-width: 100%;
     overflow-x: hidden;
 }
-
-.Links { 
-    position:absolute;
-    padding-bottom:1em;
-    padding-right:2em;
-    bottom:0;
-    right:0;
+.intro .links {
+    position: absolute;
+    padding-bottom: 1em;
+    padding-right: 2em;
+    bottom: 0;
+    right: 0;
 }
-
-.intro {   
-    margin:0px;
-    width:100vw;
-    height:100vh;
-    background-image:url("../Images/Comic.jpg");
-    background-size:auto;
+body .intro {
+    background-image: url("../Images/Comic.jpg");
     background-attachment: fixed;
-    -webkit-background-size:cover;
+    -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    background-size: cover;
     position: relative;
-    top:0;
 }
-
-#LOGO {
-    position:relative;
-    padding:0;
-    width:100vw;
-    height:100vh;
-    background-image:url("../Images/Devansh.png");
+.intro .LOGO {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../Images/Devansh.png");
     background-repeat: no-repeat;
-    background-attachment:scroll;
+    background-attachment: scroll;
     background-position: center center;
-    background-size:75% 75%;     
+    background-size: 75% 75%;
 }
-
-img {
-  position:absolute;
-  width:10%;
-  height:10%;
-  left:50vw;
-  right:50vw;
-  bottom:0;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
+.enterButton {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    left: 50vw;
+    right: 50vw;
+    bottom: 0;
 }
-
-.intro img.top:hover {
-  opacity:0;
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.top {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    -webkit-animation-direction: normal;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: blink;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-direction: normal;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-name: blink;
+    -moz-animation-timing-function: ease-in-out;
 }
