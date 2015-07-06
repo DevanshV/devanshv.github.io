@@ -4,6 +4,7 @@
 <head>
     <title>Devansh Vaid</title>
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="/bower_components/fullpage.js/jquery.fullPage.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="Resources/stackicons-master/css/stackicons-min.css" media="screen" type="text/css">
@@ -12,39 +13,73 @@
 </head>
 
 <body>
-    <div class='intro'>
-        <div class='LOGO'></div>
-        <div class='links st-shape-r4 st-multi-color'>
-            <span style="visibility: visible; -webkit-animation: fadeIn;">
+    <div id="fullpage">
+        <div class="section" id="section1">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <button type="button" class="btn btn-danger navbar-btn">About Me</button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-danger navbar-btn">Projects</button>
+                            </li>
+
+                            <li>
+                                <button type="button" class="btn btn-danger navbar-btn">Resume</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+            </nav>
+
+            <div class='intro'>
+                <div class=''><img class="LOGO" src="Images/Devansh%20(taller).png"> </div>
+                <div class='links st-shape-r4 st-multi-color'>
+                    <span style="visibility: visible; -webkit-animation: fadeIn;">
                         <a class="st-icon-linkedin button" href="https://www.google.ca" target="_blank" style="font-size: 300%"><span></span></a>
-            </span>
-            <span style="visibility: visible; -webkit-animation: fadeIn;">
+                    </span>
+                    <span style="visibility: visible; -webkit-animation: fadeIn;">
                         <a class="st-icon-github button" href="https://github.com/devanshv" target="_blank" style="font-size: 300%"><span></span></a>
-            </span>
-            <span style="visibility: visible; -webkit-animation: fadeIn;">
-                        <a class="st-icon-email button" href="mailto:d2vaid@uwaterloo.ca" target="_blank" style="font-size: 300%"><span></span></a>
-            </span>
-            <span style="visibility: visible; -webkit-animation: fadeIn;">
+                    </span>
+                    <span style="visibility: visible; -webkit-animation: fadeIn;">
+                        <a class="st-icon-gmail button" href="mailto:d2vaid@uwaterloo.ca" target="_blank" style="font-size: 300%"><span></span></a>
+                    </span>
+                    <span style="visibility: visible; -webkit-animation: fadeIn;">
                         <a class="st-icon-spotify button" href="https://open.spotify.com/user/devanshv" target="_blank" style="font-size: 300%"><span></span></a>
-            </span>
+                </div>
+
+                <img class="enterButton animated pulse" src="Images/Button-bottom.png">
+                <img class="enterButton top" src="Images/Button-top.png">
+
+            </div>
+        </div>
+        <div class="section" id="section2">
+            <div class="container">
+                <div class="about">
+                    <h1> About me</h1>
+                    <p> I am 2A Mechatronics Engineer at the University of Waterloo....</p>
+                </div>
+            </div>
         </div>
 
-        <img class="enterButton animated pulse" src="Images/Button-bottom.png">
-        <img class="enterButton top" src="Images/Button-top.png">
-
     </div>
-
-    <!--
-    <div class="container">
-        <div class="about">
-            <h1> About me</h1>
-            <p> I am 2A Mechatronics Engineer at the University of Waterloo.</p>
-        </div>
-    </div>
--->
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="bower_components/fullpage.js/jquery.fullPage.js"></script>
+    <script src="scripts/jQuery.js"></script>
 </body>
 
 </html>

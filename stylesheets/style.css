@@ -1,9 +1,60 @@
 body,
 html {
     height: 100%;
-    background-color: #8F7451;
     max-width: 100%;
     overflow-x: hidden;
+}
+.navbar {
+    margin-bottom: 0px !important;
+    border: none !important;
+}
+.navbar-default {
+    background-color: rgba(0, 0, 0, 0.32) !important;
+    border: none!important;
+    border-radius: 30px;
+    margin-top: 10px;
+    left: 50px !important;
+    right: 50px !important;
+    padding-right: 15px !important;
+}
+.btn-danger {
+    background-color: rgb(227, 31, 45) !important;
+}
+.btn-danger:hover:active {
+    color: #fff;
+    background-color: #ac2925;
+}
+.btn-danger:active {
+    color: #fff;
+    background-color: #c9302c !important;
+}
+.btn-danger:hover {
+    color: #fff;
+    background-color: #c9302c;
+}
+.btn-danger {
+    color: lightgrey!important;
+    background-color: rbg(227, 31, 45);
+    border: 2px solid rgb(45, 43, 46) !important;
+    border-radius: 5px !important;
+}
+.about {
+    margin-top: 100px;
+}
+.navbar-nav {
+    opacity: 1 !important;
+}
+.navbar-default .navbar-nav>li>a {
+    color: white !important;
+}
+.navbar-header .navbar-brand {
+    color: white !important;
+}
+nav {
+    color: red;
+}
+.navbar-collapse {
+    border: none!important;
 }
 .intro .links {
     position: absolute;
@@ -14,22 +65,23 @@ html {
 }
 body .intro {
     background-image: url("../Images/Comic.jpg");
-    background-attachment: fixed;
+    background-attachment: fixed !important;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     position: relative;
+    height: 100vh;
 }
 .intro .LOGO {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-image: url("../Images/Devansh.png");
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    background-size: 75% 75%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    width: 82%;
 }
 .enterButton {
     position: absolute;
