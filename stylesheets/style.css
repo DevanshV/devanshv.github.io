@@ -1,302 +1,514 @@
-        body,
-        html {
-            height: 100%;
-            max-width: 100%;
-            overflow-x: hidden;
-        }
-        .about {
-            margin-top: 100px;
-        }
-        .intro .links {
-            position: absolute;
-            padding-bottom: 1em;
-            padding-right: 2em;
-            bottom: 0;
-            right: 0;
-        }
-        .intro .background {
-            background-image: url("../Images/comic(b:w).jpg");
-            background-attachment: fixed !important;
-            background-size: cover;
-            position: relative;
-            height: 100vh;
-            -webkit-animation: introfadein 15s ease-out forwards;
-            -moz-animation: introfadein 15s ease-out forwards;
-            -o-animation: introfadein 15s ease-out forwards;
-            animation: introfadein 15s ease-out forwards;
-        }
-        @-webkit-keyframes introfadein {
-            0% {
-                opacity: 0;
-            }
-            40% {
-                opacity: 0.1;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-        @-moz-keyframes introfadein {
-            0% {
-                opacity: 0;
-            }
-            40% {
-                opacity: 0.1;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-        @-o-keyframes introfadein {
-            0% {
-                opacity: 0;
-            }
-            40% {
-                opacity: 0.1;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-        @keyframes introfadein {
-            0% {
-                opacity: 0;
-            }
-            40% {
-                opacity: 0.1;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-        .enterButton {
-            position: absolute;
-            width: 10%;
-            height: 10%;
-            left: 50vw;
-            right: 50vw;
-            bottom: 0;
-        }
-        .intro .devansh {
-            max-width: 82%;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            -o-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            -moz-transform: translate(-50%, -50%);
-        }
-        .devansh .fill {
-            -webkit-animation: fillfadein 10s ease-out forwards;
-            -moz-animation: fillfadein 10s ease-out forwards;
-            -o-animation: fillfadein 10s ease-out forwards;
-            animation: fillfadein 10s ease-out forwards;
-        }
-        @-webkit-keyframes fillfadein {
-            0% {
-                fill-opacity: 0;
-            }
-            40% {
-                fill-opacity: 0.5;
-            }
-            100% {
-                fill-opacity: 1;
-            }
-        }
-        @-moz-keyframes fillfadein {
-            0% {
-                fill-opacity: 0;
-            }
-            40% {
-                fill-opacity: 0.5;
-            }
-            100% {
-                fill-opacity: 1;
-            }
-        }
-        @-o-keyframes fillfadein {
-            0% {
-                fill-opacity: 0;
-            }
-            40% {
-                fill-opacity: 0.5;
-            }
-            100% {
-                fill-opacity: 1;
-            }
-        }
-        @keyframes fillfadein {
-            0% {
-                fill-opacity: 0;
-            }
-            40% {
-                fill-opacity: 0.5;
-            }
-            100% {
-                fill-opacity: 1;
-            }
-        }
-        .uw {
-            max-width: 30%;
-            position: absolute;
-            left: 50%;
-            -o-transform: translatex(-50%, -50%);
-            -ms-transform: translatex(-50%, -50%);
-            -moz-transform: translatex (-50%);
-            -webkit-animation: flipin 5s ease-in forwards infinite;
-        }
-        @-webkit-keyframes flipin {
-            0% {
-                -webkit-transform: translate(-50%, -50%) rotatey(360deg);
-            }
-            50% {
-                -webkit-transform: translate(-50%, -50%) rotatey(0deg);
-            }
-            100% {
-                -webkit-transform: translate(-50%, -50%) rotatey(-360deg);
-            }
-        }
-        .enterButton .fill {
-            -webkit-animation: fillfadein 10s ease-out forwards;
-            -moz-animation: fillfadein 10s ease-out forwards;
-            -o-animation: fillfadein 10s ease-out forwards;
-            animation: fillfadein 10s ease-out forwards;
-        }
-        /*
-        @-webkit-keyframes pulse1 {
+body {
+    min-height: 200%;
+    font-family: 'Source Sans Pro' !important;
+    font-weight: 100 !important;
+}
+.intro {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+#body {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.billboard {
+    height: 100vh;
+    width: 100vw;
+}
+.about {
+    margin-top: 100px;
+}
+.intro .links {
+    position: absolute;
+    padding-bottom: 1em;
+    padding-right: 2em;
+    bottom: 0;
+    right: 0;
+}
+.intro .background {
+    top: 0;
+    left: 0;
+    background-image: url("../Images/comic(b:w).jpg");
+    background-attachment: fixed !important;
+    background-size: cover;
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    -webkit-animation: introfadein 15s ease-out forwards;
+    -moz-animation: introfadein 15s ease-out forwards;
+    -o-animation: introfadein 15s ease-out forwards;
+    animation: introfadein 15s ease-out forwards;
+}
+@-webkit-keyframes introfadein {
     0% {
-        -webkit-transform: translateY(-40px);
+        opacity: 0;
+    }
+    45% {
+        opacity: 0.1;
     }
     100% {
-        -webkit-transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@-moz-keyframes introfadein {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-o-keyframes introfadein {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes introfadein {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.enterButton {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    bottom: 0px;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -o-transform: translateX(50%);
+    transform: translateX(50%);
+    -webkit-animation: point 3s ease-out 10s infinite;
+    -moz-animation: point 3s ease-out forwards infinite;
+    -o-animation: point 3s ease-out forwards infinite;
+    animation: point 3s ease-out forwards infinite;
+}
+.intro .devansh {
+    max-width: 82%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+}
+.devansh .fill {
+    -webkit-animation: fillfadein 10s ease-out forwards;
+    -moz-animation: fillfadein 10s ease-out forwards;
+    -o-animation: fillfadein 10s ease-out forwards;
+    animation: fillfadein 10s ease-out forwards;
+}
+@-webkit-keyframes fillfadein {
+    0% {
+        fill-opacity: 0;
+    }
+    7% {
+        fill-opacity: 0;
+    }
+    40% {
+        fill-opacity: 0.5;
+    }
+    100% {
+        fill-opacity: 1;
+    }
+}
+@-moz-keyframes fillfadein {
+    0% {
+        fill-opacity: 0;
+    }
+    40% {
+        fill-opacity: 0.5;
+    }
+    100% {
+        fill-opacity: 1;
+    }
+}
+@-o-keyframes fillfadein {
+    0% {
+        fill-opacity: 0;
+    }
+    40% {
+        fill-opacity: 0.5;
+    }
+    100% {
+        fill-opacity: 1;
+    }
+}
+@keyframes fillfadein {
+    0% {
+        fill-opacity: 0;
+    }
+    40% {
+        fill-opacity: 0.5;
+    }
+    100% {
+        fill-opacity: 1;
+    }
+}
+.uw {
+    max-width: 30%;
+    left: 50%;
+    top: 40vh;
+    position: absolute;
+    -o-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-animation: flipin 5s ease-in forwards;
+}
+
+/*@-webkit-keyframes flipin {*/
+
+
+/*
+    0% {
+        -webkit-transform: translate(-50%, -50%) rotatey(360deg);
+    }
+    50% {
+        -webkit-transform: translate(-50%, -50%) rotatey(0deg);
+    }
+    100% {
+        -webkit-transform: translate(-50%, -50%) rotatey(-360deg);
+    }
+}
+@-moz-keyframes flipin {
+    0% {
+        -moz-transform: translate(-50%, -50%) rotatey(360deg);
+    }
+    50% {
+        -moz-transform: translate(-50%, -50%) rotatey(0deg);
+    }
+    100% {
+        -moz-transform: translate(-50%, -50%) rotatey(-360deg);
+    }
+}
+@-o-keyframes flipin {
+    0% {
+        -o-transform: translate(-50%, -50%) rotatey(360deg);
+    }
+    50% {
+        -o-transform: translate(-50%, -50%) rotatey(0deg);
+    }
+    100% {
+        -o-transform: translate(-50%, -50%) rotatey(-360deg);
+    }
+}
+@keyframes flipin {
+    0% {
+        transform: translate(-50%, -50%) rotatey(360deg);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotatey(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotatey(-360deg);
     }
 }
 */
-        
-        .devansh .outline {
-            stroke: #2D2B2E;
-            stroke-width: 9px;
-            stroke-dasharray: 4000;
-            stroke-dashoffset: 4000;
-            -webkit-animation: drawoutlinename 10s ease-in forwards;
-            -moz-animation: drawoutlinename 10s ease-in forwards;
-            -o-animation: drawoutlinename 10s ease-in forwards;
-            animation: drawoutlinename 10s ease-in forwards;
+
+.enterButton .fill {
+    -webkit-animation: fillfadein 10s ease-out forwards;
+    -moz-animation: fillfadein 10s ease-out forwards;
+    -o-animation: fillfadein 10s ease-out forwards;
+    animation: fillfadein 10s ease-out forwards;
+}
+@-webkit-keyframes point {
+    0% {
+        -webkit-transform: translateX(50%) translateY(-30px);
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateX(50%) translateY(10px);
+        opacity: 0;
+    }
+}
+.uwsign {
+    stroke-dasharray: 10000;
+    stroke-dashoffset: 10000;
+    -webkit-animation: drawoutlinename1 10s ease-in forwards;
+    -moz-animation: drawoutlinename1 10s ease-in forwards;
+    -o-animation: drawoutlinename1 10s ease-in forwards;
+    animation: drawoutlinename1 10s ease-in forwards;
+}
+@-webkit-keyframes drawoutlinename1 {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+.devansh .outline {
+    stroke: #2D2B2E;
+    stroke-width: 9px;
+    stroke-dasharray: 4000;
+    stroke-dashoffset: 4000;
+    -webkit-animation: drawoutlinename 10s ease-in forwards;
+    -moz-animation: drawoutlinename 10s ease-in forwards;
+    -o-animation: drawoutlinename 10s ease-in forwards;
+    animation: drawoutlinename 10s ease-in forwards;
+}
+@-webkit-keyframes drawoutlinename {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@-moz-keyframes drawoutlinename {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@-o-keyframes drawoutlinename {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes drawoutlinename {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+.enterButton .outline {
+    stroke: #2D2B2E;
+    stroke-width: 2px;
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    -webkit-animation: drawoutline 6s ease-out forwards;
+    -moz-animation: drawoutline 6s ease-out forwards;
+    -o-animation: drawoutline 6s ease-out forwards;
+}
+@-webkit-keyframes drawoutline {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@-moz-keyframes drawoutline {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@-o-keyframes drawoutline {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes drawoutline {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+.shadow {
+    -webkit-animation: showshadow 10s ease-out forwards;
+    -moz-animation: showshadow 10s ease-out forwards;
+    -o-animation: showshadow 10s ease-out forwards;
+}
+@-webkit-keyframes showshadow {
+    0% {
+        fill-opacity: 0;
+        -webkit-transform: translate(-40px, -40px);
+    }
+    40% {
+        fill-opacity: 0;
+        -webkit-transform: translate(-40px, -40px);
+    }
+    100% {
+        -webkit-transform: translate(0px, 0px);
+        fill-opacity: 1;
+    }
+}
+@-moz-keyframes showshadow {
+    0% {
+        fill-opacity: 0;
+        -moz-transform: translate(-30px, -20px);
+    }
+    40% {
+        -moz-transform: translate(-30px, -20px);
+        fill-opacity: 0;
+    }
+    100% {
+        -moz-transform: translate(0px, 0px);
+        fill-opacity: 1;
+    }
+}
+@-0-keyframes showshadow {
+    0% {
+        fill-opacity: 0;
+        -o-transform: translate(-30px, -20px);
+    }
+    40% {
+        -o-transform: translate(-30px, -20px);
+        fill-opacity: 0;
+    }
+    100% {
+        -o-transform: translate(0px, 0px);
+        fill-opacity: 1;
+    }
+}
+.fill {
+    height: 50%;
+}
+@keyframes showshadow {
+    0% {
+        fill-opacity: 0;
+        transform: translate(-30px, -20px);
+    }
+    40% {
+        transform: translate(-30px, -20px);
+        fill-opacity: 0;
+    }
+    100% {
+        transform: translate(0px, 0px);
+        fill-opacity: 1;
+    }
+}
+#body {
+    height: 100vh;
+    position: relative;
+}
+#comingsoon {
+    height: 100vh;
+}
+.hello {
+    position: fixed;
+    bottom: 0px;
+}
+.footer {
+    width: 70%;
+    background-color: RGB(28, 33, 39);
+    -webkit-transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    border-top: 3px solid darkgoldenrod;
+    border-right: 3px solid silver;
+    border-left: 3px solid silver;
+    /*    -webkit-animation: footer 5s ease-out forwards;*/
+}
+@-webkit-keyframes footer {
+    0% {
+        width: 20%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+.copyright {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contact {
+    font-size: 18px;
+    padding-top: 20px;
+}
+.footer > svg {
+    position: absolute;
+    height: 160px;
+    left: 20px;
+}
+.info {
+    stroke-dasharray: 70;
+    stroke-dashoffset: 70;
+    -webkit-animation: forward 5s ease-out forwards;
+}
+@-webkit-keyframes forward {
+    0% {
+        stroke-dashoffset: 70;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+.message {
+    position: absolute;
+    display: inline;
+    left: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    background-color: transparent !important;
+    border: none !important;
+}
+.message:hover {
+    background-color: RGB(67, 72, 77) !important;
+    color: gainsboro;
+}
+.footer-links {
+    padding: 10px;
+}
+.footer-links > a {
+    padding-right: 10px;
+    color: gainsboro !important;
+}
+.footer-links > a:hover {
+    color: RGB(123, 17, 19) !important;
+}
+.footer-back {
+    position: relative;
+    width: 100%;
+    height: 55px;
+    text-align: center;
+    bottom: 10px !important;
+    background-color: RGB(123, 17, 19);
+    border-top: 3px solid darkgrey;
+    border-bottom: 4px solid silver;
+}
+.tv {
+    -webkit-animation: tvswing 6s 10 ease-out forwards;
+    margin-left: 100px;
+    max-width: 100%;
+    transform: translateZ(0);
+}
+@-webkit-keyframes tvswing {
+    0% {
+        -webkit-transform: matrix3d(1.0007011018576866, -0.0013342681358102487, 0, 0.00000093480247691528, -0.07330958385916983, 1.0101854501872227, 0, 0.00003828401477338887, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+    50% {
+        -webkit-transform: matrix3d(1.0020597771330744, 0, 0, 0.00000316888789703765, 0.08935638753317099, 0.9654981954586173, 0, -0.00001825414996090349, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+    100% {
+        -webkit-transform: matrix3d(1.0007011018576866, -0.0013342681358102487, 0, 0.00000093480247691528, -0.07330958385916983, 1.0101854501872227, 0, 0.00003828401477338887, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+}
+img {
+
+  -webkit-animation: imagealign 6s 10 ease-out forwards;
+    width: 50%;
+    height: 50%;
+    pointer-events: auto;
+    /*moves to normal tv position: */
+    /*-webkit-transform: matrix3d(0.7549752326240524, 0.10491772890800553, 0, 0.00015090375942302566, -0.0123658968657325, 0.75421029737699, 0, -0.00023721736330756488, 0, 0, 1, 0, 67.09292602539063, -801.1893615722656, 0, 1);*/
+transform: translateZ(0);
+}
+@-webkit-keyframes imagealign {
+    0% {
+    -webkit-transform: matrix3d(0.6340347239463405, 0.18336453452000767, 0, 0.00015320943966553804, 0.141584526837899, 0.8258811457713321, 0, -0.00029457013513843367, 0, 0, 1, 0, -637, -291.6666717529297, 0, 1);
+    -webkit-transform-origin: 0px 0px;
+    }
+    50% {
+      -webkit-transform: matrix3d(0.6721523411298488, 0.1743985525706301, 0, 0.0001535844130881849, 0.2593647556813572, 0.7937999163165231, 0, -0.0002982986330591776, 0, 0, 1, 0, -632.71875, -292.5140686035156, 0, 1);
+      -webkit-transform-origin: 0px 0px;
         }
-        @-webkit-keyframes drawoutlinename {
-            to {
-                stroke-dashoffset: 0;
-            }
+    100% {
+      -webkit-transform: matrix3d(0.6340347239463405, 0.18336453452000767, 0, 0.00015320943966553804, 0.141584526837899, 0.8258811457713321, 0, -0.00029457013513843367, 0, 0, 1, 0, -637, -291.6666717529297, 0, 1);
+      -webkit-transform-origin: 0px 0px;
         }
-        @-moz-keyframes drawoutlinename {
-            to {
-                stroke-dashoffset: 0;
-            }
-        }
-        @-o-keyframes drawoutlinename {
-            to {
-                stroke-dashoffset: 0;
-            }
-        }
-        @keyframes drawoutlinename {
-            to {
-                stroke-dashoffset: 0;
-            }
-        }
-        .enterButton .outline {
-            stroke: #2D2B2E;
-            stroke-width: 2px;
-            stroke-dasharray: 300;
-            stroke-dashoffset: 300;
-            -webkit-animation: drawoutline 6s ease-out forwards;
-            -moz-animation: drawoutline 6s ease-out forwards;
-            -o-animation: drawoutline 6s ease-out forwards;
-        }
-        @-webkit-keyframes drawoutline {
-            to {
-                stroke-dashoffset: 0;
-            }
-        }
-        @-moz-keyframes drawoutline {
-            to {
-                stroke-dashoffset: 0;
-            }
-        }
-        @-o-keyframes drawoutline {
-            to {
-                stroke-dashoffset: 0;
-            }
-        }
-        @keyframes drawoutline {
-            to {
-                stroke-dashoffset: 0;
-            }
-        }
-        .shadow {
-            -webkit-animation: showshadow 10s ease-out forwards;
-            -moz-animation: showshadow 10s ease-out forwards;
-            -o-animation: showshadow 10s ease-out forwards;
-        }
-        @-webkit-keyframes showshadow {
-            0% {
-                fill-opacity: 0;
-                -webkit-transform: translate(-30px, -20px);
-            }
-            40% {
-                -webkit-transform: translate(-30px, -20px);
-                fill-opacity: 0;
-            }
-            100% {
-                -webkit-transform: translate(0px, 0px);
-                fill-opacity: 1;
-            }
-        }
-        @-moz-keyframes showshadow {
-            0% {
-                fill-opacity: 0;
-                -moz-transform: translate(-30px, -20px);
-            }
-            40% {
-                -moz-transform: translate(-30px, -20px);
-                fill-opacity: 0;
-            }
-            100% {
-                -moz-transform: translate(0px, 0px);
-                fill-opacity: 1;
-            }
-        }
-        @-0-keyframes showshadow {
-            0% {
-                fill-opacity: 0;
-                -o-transform: translate(-30px, -20px);
-            }
-            40% {
-                -o-transform: translate(-30px, -20px);
-                fill-opacity: 0;
-            }
-            100% {
-                -o-transform: translate(0px, 0px);
-                fill-opacity: 1;
-            }
-        }
-        .fill {
-            height: 50%;
-        }
-        @keyframes showshadow {
-            0% {
-                fill-opacity: 0;
-                transform: translate(-30px, -20px);
-            }
-            40% {
-                transform: translate(-30px, -20px);
-                fill-opacity: 0;
-            }
-            100% {
-                transform: translate(0px, 0px);
-                fill-opacity: 1;
-            }
-        }
-        .about {
-            display: inline !important;
-        }
+}
