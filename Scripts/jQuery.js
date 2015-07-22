@@ -5,7 +5,7 @@ $(document).ready(function () {
     //    });
     $('.carousel').carousel()
     $(window).scroll(function () {
-        if ($("body").scrollTop() > 700) {
+        if ($("body").scrollTop() > 550) {
             $(".outline").css("-webkit-animation-play-state", "paused");
             $(".outline").css("-o-animation-play-state", "paused");
             $(".outline").css("-moz-play-state", "paused");
@@ -23,6 +23,10 @@ $(document).ready(function () {
             $(".background").css("-o-animation-play-state", "paused");
             $(".background").css("-moz-play-state", "paused");
             $(".background").css("animation-play-state", "paused");
+            if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+                $(".imageSwing").css("-webkit-animation-play-state", "running");
+                $(".tvSwingAnimation").css("-webkit-animation-play-state", "running");
+            }
         } else {
             $(".outline").css("-webkit-animation-play-state", "running");
             $(".outline").css("-o-animation-play-state", "running");
@@ -40,8 +44,15 @@ $(document).ready(function () {
             $(".background").css("-o-animation-play-state", "running");
             $(".background").css("-moz-play-state", "running");
             $(".background").css("animation-play-state", "running");
+
         }
     });
+
+    // $("svg").click(function(){
+    //     $(".imageSwing").css("-webkit-animation-play-state", "running");
+    //     $(".tvSwingAnimation").css("-webkit-animation-play-state", "running");
+    //
+    // });
 
 
 });
