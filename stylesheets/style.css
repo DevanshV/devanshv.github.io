@@ -12,6 +12,13 @@ body {
     max-height: 100vh;
     width: 100%;
     position: relative;
+    /*
+    background-image: url("../room.svg");
+    background-size: cover;
+    min-height: 100%;
+    min-width: 100%;
+*/
+    height: 100vh;
 }
 .billboard {
     height: 100vh;
@@ -32,10 +39,11 @@ body {
     left: 0;
     background-image: url("../Images/comic(b:w).jpg");
     background-attachment: fixed !important;
+    -webkit-background-size: cover;
     background-size: cover;
     position: absolute;
-    min-height: 100%;
-    min-width: 100%;
+    height: 100%;
+    width: 100%;
     -webkit-animation: introfadein 15s ease-out forwards;
     animation: introfadein 15s ease-out forwards;
     -webkit-animation: introfadein 15s ease-out forwards;
@@ -342,10 +350,7 @@ body {
 .fill {
     height: 50%;
 }
-#body {
-    height: 100vh;
-    position: relative;
-}
+#body {}
 #comingsoon {
     height: 100vh;
 }
@@ -442,7 +447,7 @@ body {
     color: RGB(123, 17, 19) !important;
 }
 .footer-back {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 55px;
     text-align: center;
@@ -516,10 +521,11 @@ body {
 }
 .imageSwing {
     -webkit-animation: imageSwingAlign 6s 1 ease-out;
-/*    animation: imageSwingAlign 6s 1 ease-out;*/
+    /*    animation: imageSwingAlign 6s 1 ease-out;*/
     -webkit-animation-play-state: paused;
-/*    animation-play-state: paused;
-    */}
+    /*    animation-play-state: paused;
+    */
+}
 @-webkit-keyframes imageSwingAlign {
     0% {
         /*normal*/
