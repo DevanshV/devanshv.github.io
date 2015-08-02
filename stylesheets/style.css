@@ -30,7 +30,7 @@ body {
 .intro .background {
     top: 0;
     left: 0;
-    background-image: url("../Images/comic(b:w).jpg");
+    background-image: url("../images/comic(b:w).jpg");
     background-attachment: fixed !important;
     -webkit-background-size: cover;
     background-size: cover;
@@ -282,6 +282,7 @@ body {
     pointer-events: auto;
     /*align to still tv*/
     -webkit-transform: matrix3d(0.7337017953626879, 0.2242330142187469, 0, 0.0001430804248441795, -0.007096610945242228, 0.5476678627924971, 0, -0.0002160394654129919, 0, 0, 1, 0, 56, 21.979156494140625, 0, 1);
+    -ms-transform: matrix3d(0.7337017953626879, 0.2242330142187469, 0, 0.0001430804248441795, -0.007096610945242228, 0.5476678627924971, 0, -0.0002160394654129919, 0, 0, 1, 0, 56, 21.979156494140625, 0, 1);
     transform: matrix3d(0.7337017953626879, 0.2242330142187469, 0, 0.0001430804248441795, -0.007096610945242228, 0.5476678627924971, 0, -0.0002160394654129919, 0, 0, 1, 0, 56, 21.979156494140625, 0, 1);
     -webkit-transform-origin: 0px 0px;
     -ms-transform-origin: 0px 0px;
