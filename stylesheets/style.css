@@ -1,24 +1,18 @@
+html,
 body {
-    min-height: 200%;
+    height: 100%;
     font-family: 'Source Sans Pro' !important;
     font-weight: 100 !important;
 }
 .intro {
     position: relative;
     width: 100%;
-    height:100vh;
+    height: 100%;
 }
 #body {
-    min-height: 100vh;
+    min-height: 100%;
     width: 100%;
     position: relative;
-}
-.billboard {
-    height: 100vh;
-    width: 100vw;
-}
-.about {
-    margin-top: 100px;
 }
 .intro .links {
     position: absolute;
@@ -199,56 +193,6 @@ body {
     border-right: 3px solid silver;
     border-left: 3px solid silver;
 }
-.copyright {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.contact {
-    font-size: 18px;
-    padding-top: 20px;
-}
-.footer > svg {
-    position: absolute;
-    height: 160px;
-    left: 20px;
-}
-.info {
-    stroke-dasharray: 70;
-    stroke-dashoffset: 70;
-    -webkit-animation: forward 5s ease-out forwards;
-    animation: forward 5s ease-out forwards;
-}
-@-webkit-keyframes forward {
-    0% {
-        stroke-dashoffset: 70;
-    }
-    100% {
-        stroke-dashoffset: 0;
-    }
-}
-@keyframes forward {
-    0% {
-        stroke-dashoffset: 70;
-    }
-    100% {
-        stroke-dashoffset: 0;
-    }
-}
-.message {
-    position: absolute;
-    display: inline;
-    left: 20px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    background-color: transparent !important;
-    border: none !important;
-}
-.message:hover {
-    background-color: RGB(67, 72, 77) !important;
-    color: gainsboro;
-}
 .footer-links {
     padding: 10px;
 }
@@ -292,24 +236,20 @@ body {
     font-size: 20px;
     font-family: 'Source Sans Pro' !important;
     top: 10%;
-    max-width: 100vw;
+    max-width: 100%;
     font-weight: 300;
     padding-top: 3em;
     padding-left: 1.8em;
     padding-right: 1em;
-    margin-bottom:4em;
+    margin-bottom: 4em;
 }
 .textbig {
     font-size: 30px;
     font-family: 'Source Sans Pro' !important;
     top: 10%;
-    max-width: 100vw;
+    max-width: 100%;
     font-weight: 300;
     padding-right: 1em;
     padding-top: 3em;
     padding-left: 1em;
-}
-
-.bodycontent{
-  display:inline-block;
 }
