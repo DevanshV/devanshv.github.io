@@ -25,7 +25,7 @@ body {
 .intro .background {
     top: 0;
     left: 0;
-    background-image: url("https://uwaterloo.ca/math/sites/ca.math/files/uploads/images/campus-aerial-west-side.jpg");
+    background-image: url('../images/campus.jpg');
     background-attachment: fixed !important;
     -webkit-background-size: cover;
     background-size: cover;
