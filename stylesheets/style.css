@@ -200,6 +200,7 @@ body {
     padding-left: 1em;
     line-height: 1.42857143;
     margin: 0px !important;
+    text-align: justify;
 }
 .item {
     overflow: hidden;
@@ -216,7 +217,11 @@ body {
         display: inline-table;
     }
     .experience .title {
-      font-size:30px !important;
+      font-size:1.5em !important;
+    }
+
+    .textsmall{
+          padding-left: 1em !important;
     }
 }
 
@@ -254,7 +259,7 @@ body {
 }*/
 
 .experience .title {
-  font-size:50px;
+  font-size:2.5em;
   text-align: center;
   font-weight: bold;
   padding-bottom: 10px;
@@ -275,6 +280,7 @@ body {
 .experience ul{
   padding-bottom: 20px;
   margin:0 auto;
+  text-align: left;
 }
 
 .back-shade{
@@ -286,4 +292,15 @@ body {
   text-align: center;
   font-size: 18px;
   margin-top: 10px;
+}
+@media all and (max-width: 768px) and (orientation:landscape) {
+    .links{
+      bottom: 10px !important;
+      right:10px !important;
+      left: inherit !important;
+      transform: none !important;
+    }
+    .links .button{
+      font-size:5vw;
+    }
 }
