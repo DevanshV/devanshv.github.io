@@ -261,7 +261,7 @@ body {
 }
 
 .experience{
-  padding: 40px;
+  padding: 40px 40px 20px 40px;
   background-image: url('../images/pink.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -279,4 +279,11 @@ body {
 
 .back-shade{
   background-color: rgba(255, 255, 255, 0.85);
+}
+
+.footer {
+  color:white !important;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
 }
