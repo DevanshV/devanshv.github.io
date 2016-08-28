@@ -13,4 +13,15 @@ $(document).ready(function () {
 	}
 
     $('.carousel').carousel();
+
+    $('.devansh').click(function() { 
+    	myFirebaseRef.child("light").once("value", function(snapshot) {
+    		if (snapshot.val() == 1) {
+				myFirebaseRef.update({light: 0});
+			} else {
+				myFirebaseRef.update({light: 1});
+			}
+		});	 
+    });
+
 });
